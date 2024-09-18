@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex de Cachorros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Superior -->
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#pokedex">Pokedex</a></li>
+            <li><a href="#about">Sobre a ONG</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Bem-vindo à Pokedex de Cachorros Abandonados</h1>
+        <p>Encontre aqui informações sobre cachorros abandonados e como você pode adotá-los para dar um novo lar.</p>
+    </section>
+
+    <!-- Seção da Pokedex com carrossel de cards -->
+    <section id="pokedex">
+        <h2>Pokedex de Cachorros</h2>
+
+        <!-- Controles para girar os cards -->
+        <button id="prev">◀</button>
+        <div id="carousel-container">
+            <div id="dog-list"></div>
+        </div>
+        <button id="next">▶</button>
+
+        <div id="dog-details" class="hidden">
+            <button onclick="hideDetails()">Voltar</button>
+            <h2 id="dog-name"></h2>
+            <img id="dog-image" alt="Imagem do cachorro" />
+            <p><strong>Raça:</strong> <span id="dog-breed"></span></p>
+            <p><strong>Idade:</strong> <span id="dog-age"></span> anos</p>
+            <p><strong>Sexo:</strong> <span id="dog-gender"></span></p>
+            <p><strong>Peso:</strong> <span id="dog-weight"></span> kg</p>
+            <p><strong>Cor do Pelo:</strong> <span id="dog-color"></span></p>
+        </div>
+    </section>
+
+    <!-- Seção sobre a ONG -->
+    <section id="about">
+        <h2>Sobre a ONG Corações Peludos</h2>
+        <p>A ONG Corações Peludos foi fundada com a missão de resgatar, cuidar e encontrar lares amorosos para cachorros abandonados.</p>
+        <p>Desde 2010, salvamos mais de 500 cachorros e oferecemos serviços de reabilitação e adoção.</p>
+        <p>Estamos comprometidos em proporcionar uma nova chance de vida para os animais.</p>
+        <p><strong>Endereço:</strong> Rua dos Animais 123, Cidade dos Pets</p>
+        <p><strong>Horário de funcionamento:</strong> Segunda a Sábado, das 9h às 18h</p>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para saber mais sobre adoção, doações ou como você pode ajudar.</p>
+        <p><strong>Email:</strong> contato@coracoespeludos.org</p>
+        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+    </section>
+
+    <!-- Bio da Dona da ONG -->
+    <section id="owner">
+        <h2>Sobre a Fundadora</h2>
+        <img src="https://th.bing.com/th/id/OIP.KGygFWcxXChIfQdyQOVBJgHaFS?rs=1&pid=ImgDetMain" alt="Foto da Dona" class="owner-photo">
+        <p><strong>Maria Silva</strong> é a fundadora da ONG Corações Peludos. Apaixonada por animais, ela se dedica a salvar e cuidar de cachorros abandonados há mais de 15 anos. Sua missão é garantir que todos os cães resgatados encontrem lares cheios de amor e carinho.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

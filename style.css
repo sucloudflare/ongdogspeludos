@@ -1,0 +1,356 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(https://flxt.tmsimg.com/assets/p8845672_i_h10_aa.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Menu Superior */
+nav {
+    background-color: #ffffff; /* Fundo branco sólido */
+    padding: 20px;
+    border-bottom: 2px solid #4a90e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #357abd;
+}
+
+/* Seção Home */
+#home {
+    text-align: center;
+    color: #4a90e2;
+    padding: 60px 20px;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    background-color: #ffffff; /* Fundo branco sólido */
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+#home p {
+    font-size: 1.3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fundo branco sólido */
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* Seção da Pokedex */
+#pokedex {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#pokedex h2 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    background-color: #ffffff; /* Fundo branco sólido */
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 12px;
+}
+
+#carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#dog-list {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease;
+}
+
+.dog-card {
+    background-color: #ffffff; /* Fundo branco sólido */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.dog-card h3 {
+    font-size: 1.3rem;
+    color: #4a90e2;
+    margin: 15px 0;
+}
+
+.dog-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Detalhes do cachorro */
+#dog-details {
+    background-color: #ffffff; /* Fundo branco sólido */
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    text-align: left;
+}
+
+#dog-details h2 {
+    font-size: 2.2rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+#dog-details p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 12px 0;
+}
+
+#dog-details button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dog-details button:hover {
+    background-color: #357abd;
+}
+
+#dog-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+/* Seção sobre a ONG */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#about h2 {
+    font-size: 2.2rem;
+    color: #4a90e2;
+    margin-bottom: 25px;
+    background-color: #ffffff; /* Fundo branco sólido */
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fundo branco sólido */
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* Seção de contato */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    font-size: 2.2rem;
+    color: #4a90e2;
+    margin-bottom: 25px;
+    background-color: #ffffff; /* Fundo branco sólido */
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #555;
+    background-color: #ffffff; /* Fundo branco sólido */
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* Bio da Dona da ONG */
+#owner {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.owner-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    object-fit: cover;
+    border: 5px solid #4a90e2;
+}
+
+#owner h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    background-color: #ffffff; /* Fundo branco sólido */
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+#owner p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fundo branco sólido */
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* Classe oculta */
+.hidden {
+    display: none;
+}
+@media (max-width: 768px) {
+    .dog-card {
+        width: 180px;
+        font-size: 1rem;
+    }
+
+    #dog-details {
+        padding: 20px;
+    }
+
+    #dog-details h2 {
+        font-size: 1.8rem;
+    }
+
+    #dog-details p {
+        font-size: 1.1rem;
+    }
+
+    #about img,
+    .owner-photo {
+        width: 90px;
+        height: 90px;
+    }
+
+    #about h2,
+    #contact h2,
+    #owner h2 {
+        font-size: 1.7rem;
+    }
+
+    #about p,
+    #contact p,
+    #owner p {
+        font-size: 1.1rem;
+    }
+
+    /* Centralizar títulos no mobile */
+    #home h1, #pokedex h2, #about h2, #contact h2, #owner h2 {
+        text-align: center;
+    }
+
+    /* Diminuir o tamanho da fonte de Home h1 no mobile */
+    #home h1 {
+        font-size: 2.5rem; /* Tamanho menor para telas até 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .dog-card {
+        width: 140px;
+        font-size: 0.9rem;
+    }
+
+    #dog-details {
+        padding: 15px;
+    }
+
+    #dog-details h2 {
+        font-size: 1.5rem;
+    }
+
+    #dog-details p {
+        font-size: 1rem;
+    }
+
+    #about img,
+    .owner-photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    #about h2,
+    #contact h2,
+    #owner h2 {
+        font-size: 1.5rem;
+    }
+
+    #about p,
+    #contact p,
+    #owner p {
+        font-size: 1rem;
+    }
+
+    /* Centralizar títulos no mobile */
+    #home h1, #pokedex h2, #about h2, #contact h2, #owner h2 {
+        text-align: center;
+    }
+
+    /* Diminuir o tamanho da fonte de Home h1 no mobile ainda mais */
+    #home h1 {
+        font-size: 2rem; /* Tamanho menor para telas até 480px */
+    }
+}
