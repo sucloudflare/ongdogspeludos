@@ -37,7 +37,7 @@
    <h2>Como Usar</h2>
     <ol>
         <li><strong>Clone o repositório:</strong></li>
-        <pre><code>git clone https://github.com/seu-usuario/dog-pokedex.git</code></pre>
+        <pre><code>git clone https://github.com/sucloudflare/ongdogspeludos</code></pre>
 
   <li><strong>Abra o projeto no seu navegador:</strong></li>
      <p>Abra o arquivo <code>index.html</code> diretamente em seu navegador favorito para visualizar o projeto.</p>
